@@ -1,0 +1,63 @@
+{
+  "fluentMethods": true,
+  "clientRootFolder": "microrisque",
+  "relationships": [
+    {
+      "relationshipName": "audit",
+      "otherEntityName": "audit",
+      "relationshipType": "many-to-one",
+      "otherEntityField": "id",
+      "otherEntityRelationshipName": "auditEventTrigger"
+    }
+  ],
+  "fields": [
+    {
+      "fieldName": "editorId",
+      "fieldType": "Long",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "createdAt",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "recurrence",
+      "fieldType": "AuditEventRecurrence",
+      "fieldValues": "ONCE,ALLAWAYS,WEEK,EVERY_WEEK_ON_DAY,EVERY_YEAR_ON_DATE,EVERY_MONTH_OF_DAY_POSITION"
+    },
+    {
+      "fieldName": "disabled",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "editorName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "firstStartedAt",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "nextStartAt",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "startCount",
+      "fieldType": "Integer"
+    }
+  ],
+  "changelogDate": "20211205071554",
+  "dto": "no",
+  "searchEngine": false,
+  "service": "serviceClass",
+  "entityTableName": "audit_event_trigger",
+  "databaseType": "sql",
+  "readOnly": false,
+  "jpaMetamodelFiltering": true,
+  "pagination": "pagination",
+  "microserviceName": "microrisque"
+}

@@ -1,0 +1,28 @@
+{
+  "name": "ControlType",
+  "fields": [
+    {
+      "fieldName": "type",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "required",
+        "unique",
+        "maxlength"
+      ],
+      "fieldValidateRulesMaxlength": "25"
+    }
+  ],
+  "relationships": [],
+  "changelogDate": "20210609015137",
+  "entityTableName": "control_type",
+  "dto": "no",
+  "pagination": "pagination",
+  "service": "serviceClass",
+  "jpaMetamodelFiltering": true,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "microrisque",
+  "applications": "*",
+  "microserviceName": "microrisque"
+}

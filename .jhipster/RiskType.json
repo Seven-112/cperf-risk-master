@@ -1,0 +1,28 @@
+{
+  "name": "RiskType",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "required",
+        "unique",
+        "maxlength"
+      ],
+      "fieldValidateRulesMaxlength": "30"
+    }
+  ],
+  "relationships": [],
+  "changelogDate": "20210609014937",
+  "entityTableName": "risk_type",
+  "dto": "no",
+  "pagination": "pagination",
+  "service": "serviceClass",
+  "jpaMetamodelFiltering": true,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "microrisque",
+  "applications": "*",
+  "microserviceName": "microrisque"
+}

@@ -1,0 +1,75 @@
+{
+  "fluentMethods": true,
+  "clientRootFolder": "microrisque",
+  "relationships": [],
+  "fields": [
+    {
+      "fieldName": "auditorId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "auditorName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "auditorEmail",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "auditId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "status",
+      "fieldType": "AuditStatus",
+      "fieldValues": "INITIAL,STARTED,EXECUTED,SUBMITTED,COMPLETED,CANCELED"
+    },
+    {
+      "fieldName": "content",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    },
+    {
+      "fieldName": "responsableId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "responsableName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "responsableEmail",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "dateLimit",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "editAt",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "executedAt",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "entityId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "entiyName",
+      "fieldType": "String"
+    }
+  ],
+  "changelogDate": "20220204014210",
+  "dto": "no",
+  "searchEngine": false,
+  "service": "serviceClass",
+  "entityTableName": "audit_recommendation",
+  "databaseType": "sql",
+  "readOnly": false,
+  "jpaMetamodelFiltering": true,
+  "pagination": "pagination",
+  "microserviceName": "microrisque"
+}

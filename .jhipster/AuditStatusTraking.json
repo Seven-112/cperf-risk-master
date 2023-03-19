@@ -1,0 +1,48 @@
+{
+  "fluentMethods": true,
+  "clientRootFolder": "microrisque",
+  "relationships": [],
+  "fields": [
+    {
+      "fieldName": "auditId",
+      "fieldType": "Long",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "status",
+      "fieldType": "AuditStatus",
+      "fieldValues": "INITIAL,STARTED,EXECUTED,SUBMITTED,COMPLETED,CANCELED"
+    },
+    {
+      "fieldName": "tracingAt",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "justification",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    },
+    {
+      "fieldName": "userId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "editable",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "recom",
+      "fieldType": "Boolean"
+    }
+  ],
+  "changelogDate": "20211014151439",
+  "dto": "no",
+  "searchEngine": false,
+  "service": "serviceClass",
+  "entityTableName": "audit_status_traking",
+  "databaseType": "sql",
+  "readOnly": false,
+  "jpaMetamodelFiltering": true,
+  "pagination": "pagination",
+  "microserviceName": "microrisque"
+}

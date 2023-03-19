@@ -1,0 +1,28 @@
+{
+  "name": "ControlMaturity",
+  "fields": [
+    {
+      "fieldName": "label",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "required",
+        "unique",
+        "maxlength"
+      ],
+      "fieldValidateRulesMaxlength": "25"
+    }
+  ],
+  "relationships": [],
+  "changelogDate": "20210609015237",
+  "entityTableName": "control_maturity",
+  "dto": "no",
+  "pagination": "pagination",
+  "service": "serviceClass",
+  "jpaMetamodelFiltering": true,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "microrisque",
+  "applications": "*",
+  "microserviceName": "microrisque"
+}

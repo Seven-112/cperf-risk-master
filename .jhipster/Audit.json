@@ -1,0 +1,80 @@
+{
+  "fluentMethods": true,
+  "clientRootFolder": "microrisque",
+  "relationships": [
+    {
+      "relationshipName": "cycle",
+      "otherEntityName": "auditCycle",
+      "relationshipType": "many-to-one",
+      "otherEntityField": "id",
+      "otherEntityRelationshipName": "audit"
+    }
+  ],
+  "fields": [
+    {
+      "fieldName": "title",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "startDate",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "endDate",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "executedAt",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "processId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "processName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "processCategoryId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "processCategoryName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "riskLevel",
+      "fieldType": "AuditRiskLevel",
+      "fieldValues": "MINOR,MEDIUM,MAJOR"
+    },
+    {
+      "fieldName": "type",
+      "fieldType": "AuditType",
+      "fieldValues": "INTERNAL,PERMANENT,QUALITY"
+    },
+    {
+      "fieldName": "status",
+      "fieldType": "AuditStatus",
+      "fieldValues": "INITIAL,STARTED,EXECUTED,SUBMITTED,COMPLETED,CANCELED"
+    },
+    {
+      "fieldName": "riskId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "riskName",
+      "fieldType": "String"
+    }
+  ],
+  "changelogDate": "20220201073024",
+  "dto": "no",
+  "searchEngine": false,
+  "service": "serviceClass",
+  "entityTableName": "audit",
+  "databaseType": "sql",
+  "readOnly": false,
+  "jpaMetamodelFiltering": true,
+  "pagination": "pagination",
+  "microserviceName": "microrisque"
+}

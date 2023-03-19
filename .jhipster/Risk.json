@@ -1,0 +1,52 @@
+{
+  "name": "Risk",
+  "fields": [
+    {
+      "fieldName": "label",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "required"
+      ]
+    },
+    {
+      "fieldName": "probability",
+      "fieldType": "Float"
+    },
+    {
+      "fieldName": "gravity",
+      "fieldType": "Float"
+    },
+    {
+      "fieldName": "cause",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "control",
+      "otherEntityRelationshipName": "risk",
+      "relationshipName": "controls"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "riskType",
+      "otherEntityRelationshipName": "risk",
+      "relationshipValidateRules": "required",
+      "relationshipName": "type",
+      "otherEntityField": "id"
+    }
+  ],
+  "changelogDate": "20210609014837",
+  "entityTableName": "risk",
+  "dto": "no",
+  "pagination": "pagination",
+  "service": "serviceClass",
+  "jpaMetamodelFiltering": true,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "microrisque",
+  "applications": "*",
+  "microserviceName": "microrisque"
+}

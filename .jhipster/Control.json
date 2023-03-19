@@ -1,0 +1,53 @@
+{
+  "name": "Control",
+  "fields": [
+    {
+      "fieldName": "description",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "required"
+      ]
+    },
+    {
+      "fieldName": "validationRequired",
+      "fieldType": "Boolean"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "controlType",
+      "otherEntityRelationshipName": "control",
+      "relationshipValidateRules": "required",
+      "relationshipName": "type",
+      "otherEntityField": "id"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "controlMaturity",
+      "otherEntityRelationshipName": "control",
+      "relationshipValidateRules": "required",
+      "relationshipName": "maturity",
+      "otherEntityField": "id"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "risk",
+      "otherEntityRelationshipName": "controls",
+      "relationshipName": "risk",
+      "otherEntityField": "id"
+    }
+  ],
+  "changelogDate": "20210609015037",
+  "entityTableName": "control",
+  "dto": "no",
+  "pagination": "pagination",
+  "service": "serviceClass",
+  "jpaMetamodelFiltering": true,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "microrisque",
+  "applications": "*",
+  "microserviceName": "microrisque"
+}

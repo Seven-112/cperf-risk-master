@@ -1,0 +1,45 @@
+entity Risk {
+	label String required,
+    probability Float,
+    gravity Float,
+    cause String,
+}
+
+entity RiskType{
+	name String required unique maxlength(30)
+}
+
+entity Control{
+	description String required,
+    validationRequired Boolean
+    
+}
+
+entity ControlType{
+	type String required unique maxlength(25),
+}
+
+entity ControlMaturity{
+	label String required unique maxlength(25)
+}
+
+relationship ManyToOne{
+	Risk{type required} to RiskType
+}
+
+relationship OneToMany{
+	Risk{controls} to Control{risk}
+}
+
+relationship ManyToOne{
+	Control{type required} to ControlType
+}
+
+relationship ManyToOne{
+	Control{maturity required} to ControlMaturity
+}
+
+paginate * with pagination
+service * with serviceClass
+filter *
+

@@ -1,0 +1,42 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "com.mshz",
+      "nativeLanguage": "fr"
+    },
+    "jhipsterVersion": "6.10.5",
+    "applicationType": "microservice",
+    "baseName": "microrisque",
+    "packageName": "com.mshz",
+    "packageFolder": "com/mshz",
+    "serverPort": "8085",
+    "authenticationType": "jwt",
+    "cacheProvider": "hazelcast",
+    "enableHibernateCache": true,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "postgresql",
+    "prodDatabaseType": "postgresql",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": "eureka",
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "ZDQxN2RhZGRjYTJhYjE2OGNhZjk1Mzg4OTE4NTFmOTUyNDNhNmUxNGI0MjVhNmFkOTc4MjliM2RkNzgwMzkxZWRiODY5MWFmMjVkYTQ5YjcxMDZmOTI0ZDZiYmY0MGM5YmUzZDlkNmVjYTY2ZDQ5ZjhiZTFmZGNkMTBhODUzOGE=",
+    "embeddableLaunchScript": false,
+    "creationTimestamp": 1623198499431,
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": true,
+    "clientPackageManager": "npm",
+    "nativeLanguage": "fr",
+    "languages": ["fr", "en"],
+    "blueprints": [],
+    "skipClient": true,
+    "skipUserManagement": true,
+    "lastLiquibaseTimestamp": 1644001144000
+  }
+}

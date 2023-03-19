@@ -1,0 +1,29 @@
+{
+  "fluentMethods": true,
+  "clientRootFolder": "microrisque",
+  "relationships": [],
+  "fields": [
+    {
+      "fieldName": "recommendationId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "fileId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "fileName",
+      "fieldType": "String"
+    }
+  ],
+  "changelogDate": "20220204015328",
+  "dto": "no",
+  "searchEngine": false,
+  "service": "serviceClass",
+  "entityTableName": "audit_recommendation_file",
+  "databaseType": "sql",
+  "readOnly": false,
+  "jpaMetamodelFiltering": true,
+  "pagination": "pagination",
+  "microserviceName": "microrisque"
+}
